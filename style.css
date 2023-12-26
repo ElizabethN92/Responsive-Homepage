@@ -31,3 +31,27 @@ header.main_header_container{
     width: 100%;
 }
 
+
+/********** HERO CONTENT ***********/
+.hero_content_container{
+    border: 1px solid red;
+    font-family: 'Epilogue', sans-serif;
+}
+.hero_title{
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.hero_content_container p{
+    /* border: 1px solid blue; */
+    line-height: 27px;
+    margin: 0px 18px;
+
+    text-align: center;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500px;
+}
