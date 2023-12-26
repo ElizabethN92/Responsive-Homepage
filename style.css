@@ -47,11 +47,10 @@ header.main_header_container{
 }
 
 .hero_content_container p{
-    /* border: 1px solid blue; */
+    border: 1px solid blue; 
+    font-weight: 500;
     line-height: 27px;
     margin: 0px 18px;
-
     text-align: center;
     color: hsl(0, 0%, 41%);
-    font-weight: 500px;
 }
