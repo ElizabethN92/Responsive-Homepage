@@ -54,3 +54,26 @@ header.main_header_container{
     text-align: center;
     color: hsl(0, 0%, 41%);
 }
+
+/********** BUTTON ***********/
+button {
+    background-color: hsl(0, 0%, 8%);
+    color:hsl(0, 0%, 98%);
+    border: none;
+    padding: 15px 27px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    /**center button horizontally*/
+    margin: 0 auto;
+    display: block;
+
+    /*create space between button and paragraph*/
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
