@@ -1,0 +1,21 @@
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+}
+header.main_header_container{
+    border: 1px solid red;
+    padding: 30px 20px;
+    overflow: hidden;
+}
+.brand_logo{
+    float: left;
+}
+.menu_icon{
+    float:right
+}
