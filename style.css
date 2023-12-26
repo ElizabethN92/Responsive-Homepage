@@ -12,6 +12,7 @@ header.main_header_container{
     border: 1px solid red;
     padding: 30px 20px;
     overflow: hidden;
+
 }
 .brand_logo{
     float: left;
@@ -19,3 +20,14 @@ header.main_header_container{
 .menu_icon{
     float:right
 }
+
+
+/********* HERO IMAGE ***********/
+.hero_img_container{
+    border: 1px solid orange;
+    width: auto;
+}
+.hero_img{
+    width: 100%;
+}
+
