@@ -77,3 +77,20 @@ button {
 }
 
 
+
+/********* Partnership Section **********/
+.partnership_icons_container{
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+    margin-bottom: 100px;
+}
+.partnership_icons_container img{
+    font-size: 20px;
+    align-self: center;
+    
+    /*make svg file responsive*/
+    width: 15%;
+    height: 15%;
+}
