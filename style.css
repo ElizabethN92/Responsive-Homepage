@@ -93,3 +93,13 @@ button {
     width: 15%;
     height: 15%;
 }
+
+/*********** Overlay **************/
+.background_color_overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0.7);
+    display: none;
+}
