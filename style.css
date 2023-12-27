@@ -10,9 +10,8 @@ body{
 }
 header.main_header_container{
     border: 1px solid red;
-    padding: 30px 20px;
+    padding: 26px 20px;
     overflow: hidden;
-
 }
 .brand_logo{
     float: left;
@@ -89,7 +88,7 @@ button {
 .partnership_icons_container img{
     font-size: 20px;
     align-self: center;
-    
+
     /*make svg file responsive*/
     width: 15%;
     height: 15%;
