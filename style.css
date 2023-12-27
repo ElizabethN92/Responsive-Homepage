@@ -115,7 +115,7 @@ nav {
     width: 66%;
     height: 100vh;
     background-color: white;
-   /* display: none; */
+    display: none;  /*** hide nav ****/
 }
 .close_menu_icon{
     float: right;
