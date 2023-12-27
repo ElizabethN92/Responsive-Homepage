@@ -128,23 +128,23 @@ nav ul {
     padding-left: 0px;
     margin-top: 85px;
 }
-nav ul li{
-    padding: 15px 30px;
-    font-size: 18px;
+nav ul li{  /*Main nav list*/
+    padding: 23px 30px 0px 30px;
+    font-size: 16px;
 }
+
 nav ul li a{
     text-decoration: none;
     color: hsl(0, 0%, 41%);
     font-weight: 500;
 }
-
 .down_arrow_icon{
     padding-left: 10px;
 }
 
 .login_or_register_container{
    /* border: 1px solid red;*/
-    margin-top: 27px; 
+    margin-top: 42px; 
 }
 .login_link{
     /*border: 1px solid green; */
@@ -162,3 +162,36 @@ nav ul li a{
     padding: 14px 30%; /*make padding responsive to screen width*/
     font-size: 15px;
 }
+
+/******** DROP-DOWN MENU **********/
+.dropdown_content, 
+.dropdown_content_2 { /*All dropdown content*/
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.dropdown1{ /*first dropdown to remove padding*/
+    padding-top: 0px;
+}
+
+.dropdown_content li, 
+.dropdown_content_2 li{ /*align items vertically*/
+    display: flex;
+    padding: 10px 30px;
+}
+
+.dropdown_item{
+    padding-top: 5px;
+    padding-left: 15px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.dropdown_img{
+    width: 19px;
+}
+
+
+
+
