@@ -8,6 +8,7 @@
 body{
     margin: 0;
     font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
 }
 header.main_header_container{
     border: 1px solid red;
@@ -191,6 +192,7 @@ nav ul li a{
 .dropdown_img{
     width: 19px;
 }
+
 
 
 
