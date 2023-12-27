@@ -195,5 +195,71 @@ nav ul li a{
 
 
 
+/*********************** DESKTOP VERSION **********************/
+@media screen and (min-width: 1030px){
 
+
+    header.main_header_container{
+        display: flex;
+        justify-content: space-between;
+        padding: 26px 40px;
+    }
+
+    .menu_icon{
+        display: none;
+    }
+    .brand_logo{
+        margin-top: 4px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        right: auto;
+        top: auto;
+        z-index: 0;
+        width: 90%;
+        height: 27px;
+        background-color:  hsl(0, 0%, 98%);
+    }
+    .close_menu_icon{
+        display: none;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0px;
+        display: flex;
+    }
+    nav ul li{  /*Main nav list*/
+        padding: 0px 25px;
+        font-size: 16px;
+        align-self: center; 
+    }
+    .dropdown1{ /*first dropdown to remove padding*/
+        padding-top: 0px;
+    }
+    .login_or_register_container{
+        display: flex;
+        margin: 0;
+        padding: 10px 0px; 
+        width: fit-content;
+     }
+     .login_link{
+        align-self: center;
+        margin-right: 55px;
+     }
+     .register_btn{
+        margin: 0px;
+        padding: 14px 20px;
+        align-self: center;
+     }
+
+
+
+
+    .dropdown_content, .dropdown_content_2 {
+        display: none;
+    }
+}
 
