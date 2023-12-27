@@ -7,6 +7,7 @@
 
 body{
     margin: 0;
+    font-family: 'Epilogue', sans-serif;
 }
 header.main_header_container{
     border: 1px solid red;
@@ -102,4 +103,62 @@ button {
     height: 100vh;
     background-color: rgba(20, 20, 20, 0.7);
     display: none;
+}
+
+
+/******** SLIDE-OUT MENU *************/
+nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 66%;
+    height: 100vh;
+    background-color: white;
+   /* display: none; */
+}
+.close_menu_icon{
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 85px;
+}
+nav ul li{
+    padding: 15px 30px;
+    font-size: 18px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+}
+
+.down_arrow_icon{
+    padding-left: 10px;
+}
+
+.login_or_register_container{
+   /* border: 1px solid red;*/
+    margin-top: 27px; 
+}
+.login_link{
+    /*border: 1px solid green; */
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+    font-size: 15px;
+}
+.register_btn{
+    background-color: white;
+    color:  hsl(0, 0%, 41%);
+    border: 1.5px solid  hsl(0, 0%, 41%);;
+    padding: 14px 30%; /*make padding responsive to screen width*/
+    font-size: 15px;
 }
