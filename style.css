@@ -288,13 +288,22 @@ nav ul li a{
     /************ HERO CONTAINER ************/
     .hero_container{
         display: flex;
-        margin: 0px 105px;
+        justify-content: space-between;
+        height: 750px;
+        width: 87%;
+        margin: 0 auto;
     }
     .hero_img_container{
         order: 1;
+        flex-grow: 1;
+        width: 50%;
+        margin-left: 20px;
     }
     .hero_content_container{
         order: 0;
+        flex-grow: 1;
+        width: 50%;
+        margin-right: 20px;
     }
 
     /******* HERO IMAGE ********/
@@ -303,14 +312,11 @@ nav ul li a{
     }
     .hero_img_desktop {
         display: inline;
-        object-fit: cover;
+        object-fit: fill;
         object-position: center;
         height: 100%;
         width: 100%;
     }
-
-
-
    
 
 }
