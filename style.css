@@ -317,7 +317,27 @@ nav ul li a{
         height: 100%;
         width: 100%;
     }
+
+    /******* HERO CONTENT CONTAINER **********/
+    .hero_title{
+        text-align: left;
+        font-size: 66px;
+        border: 1px solid purple;
+        margin-top: 117px;
+    }
+
+    /****** created line-break ****/
+    #line_break::after{
+        content: "\a";
+        white-space: pre;
+    }
    
+    .hero_content_container p{
+        text-align: left;
+        margin: 0px;
+        width: 430px;
+        font-size: 18px;
+    }
 
 }
 
