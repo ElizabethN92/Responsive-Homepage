@@ -25,7 +25,7 @@ header.main_header_container{
 
 /********* HERO IMAGE ***********/
 .hero_img_container{
-    border: 1px solid orange;
+    /*border: 1px solid orange; */
     width: auto;
 }
 .hero_img{
@@ -37,7 +37,7 @@ header.main_header_container{
 
 /********** HERO CONTENT ***********/
 .hero_content_container{
-    border: 1px solid red;
+    /* border: 1px solid red;*/
     font-family: 'Epilogue', sans-serif;
 }
 .hero_title{
@@ -83,7 +83,6 @@ button {
 
 /********* Partnership Section **********/
 .partnership_icons_container{
-    border: 1px solid green;
     display: flex;
     justify-content: space-around;
     padding: 10px 0px;
@@ -198,7 +197,7 @@ nav ul li a{
 
 
 /*********************** DESKTOP VERSION **********************/
-@media screen and (min-width: 1030px){
+@media screen and (min-width: 1100px){
 
 
     header.main_header_container{
@@ -290,7 +289,7 @@ nav ul li a{
         display: flex;
         justify-content: space-between;
         height: 750px;
-        width: 87%;
+        width: 83%;
         margin: 0 auto;
     }
     .hero_img_container{
@@ -300,6 +299,7 @@ nav ul li a{
         margin-left: 20px;
     }
     .hero_content_container{
+        position: relative;
         order: 0;
         flex-grow: 1;
         width: 50%;
@@ -321,9 +321,10 @@ nav ul li a{
     /******* HERO CONTENT CONTAINER **********/
     .hero_title{
         text-align: left;
-        font-size: 66px;
+        font-size: 6vw;
         border: 1px solid purple;
-        margin-top: 117px;
+        margin-top: 172px;
+        margin-bottom: 0px;
     }
 
     /****** created line-break ****/
@@ -334,9 +335,25 @@ nav ul li a{
    
     .hero_content_container p{
         text-align: left;
-        margin: 0px;
+        margin: 67px 0px 0px;
         width: 430px;
-        font-size: 18px;
+        font-size: 1.2rem;
+       
+    }
+
+    button {
+        margin: 45px 0px 0px;
+        color: hsl(0, 0%, 8%);
+        background-color: hsl(0, 0%, 98%);
+        border: 1px solid hsl(0, 0%, 8%);
+    }
+
+    .partnership_icons_container{
+        margin-bottom: 0px;
+        position: absolute;
+        width: 100%;
+        bottom: -11px;
+        padding: 0;
     }
 
 }
