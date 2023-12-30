@@ -49,8 +49,7 @@ header.main_header_container{
     margin-bottom: 20px;
 }
 
-.hero_content_container p{
-    border: 1px solid blue; 
+.hero_content_container p{ 
     font-weight: 500;
     line-height: 27px;
     margin: 0px 18px;
@@ -203,7 +202,7 @@ nav ul li a{
     header.main_header_container{
         display: flex;
         justify-content: space-between;
-        padding: 26px 40px;
+        padding: 26px 35px 60px 35px;
 
         /*Allowed me to make the dropdown menu item visible */
         position: relative;
@@ -239,10 +238,23 @@ nav ul li a{
         overflow: visible;
     }
     nav ul li.main_menu{  /*Main nav list*/
-        padding: 0px 25px;
-        font-size: 16px;
+        padding: 0px 15px;
+        font-size: 15px;
         align-self: center; 
     }
+    nav ul li.main_menu:first-child{
+        padding-left:17px;
+    }
+
+
+
+    .down_arrow_icon{  /* Temporarly removed it */
+        display: none;
+    }
+    .up_arrow_icon{
+        margin-left: 5px;
+    }
+
     .dropdown1{ /*first dropdown to remove padding*/
         padding-top: 0px;
     }
@@ -254,11 +266,11 @@ nav ul li a{
      }
      .login_link{
         align-self: center;
-        margin-right: 55px;
+        margin-right: 45px;
      }
      .register_btn{
         margin: 0px;
-        padding: 14px 20px;
+        padding: 10px 20px;
         align-self: center;
      }
 
@@ -288,14 +300,14 @@ nav ul li a{
     .hero_container{
         display: flex;
         justify-content: space-between;
-        height: 750px;
+        height: 685px;
         width: 83%;
         margin: 0 auto;
     }
     .hero_img_container{
         order: 1;
         flex-grow: 1;
-        width: 50%;
+        width: 35%;
         margin-left: 20px;
     }
     .hero_content_container{
@@ -304,6 +316,7 @@ nav ul li a{
         flex-grow: 1;
         width: 50%;
         margin-right: 20px;
+        margin-left: 38px;
     }
 
     /******* HERO IMAGE ********/
@@ -321,9 +334,8 @@ nav ul li a{
     /******* HERO CONTENT CONTAINER **********/
     .hero_title{
         text-align: left;
-        font-size: 6vw;
-        border: 1px solid purple;
-        margin-top: 172px;
+        font-size: 5.5vw;
+        margin-top: 118px;
         margin-bottom: 0px;
     }
 
@@ -335,9 +347,10 @@ nav ul li a{
    
     .hero_content_container p{
         text-align: left;
-        margin: 67px 0px 0px;
+        margin: 73px 0px 0px;
         width: 430px;
         font-size: 1.2rem;
+        font-weight: normal;
        
     }
 
@@ -351,9 +364,10 @@ nav ul li a{
     .partnership_icons_container{
         margin-bottom: 0px;
         position: absolute;
-        width: 100%;
+        width: 90%;
         bottom: -11px;
         padding: 0;
+        justify-content: space-between;
     }
 
 }
