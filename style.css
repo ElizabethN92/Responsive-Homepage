@@ -293,7 +293,10 @@ nav ul li a{
        padding: 10px 10px;
     }
     .dropdown_content{
-        left: -46px;
+        left: -68px;
+    }
+    .dropdown_content_2{
+        left: 132px;
     }
 
     /************ HERO CONTAINER ************/
@@ -369,6 +372,8 @@ nav ul li a{
         padding: 0;
         justify-content: space-between;
     }
+
+    /*Chaning the img to contain, the margin of the the div and width percentage might help*/
 
 }
 
