@@ -143,6 +143,8 @@ nav ul li a{
     padding-left: 10px;
 }
 
+
+
 .login_or_register_container{
    /* border: 1px solid red;*/
     margin-top: 42px; 
@@ -192,6 +194,15 @@ nav ul li a{
 .dropdown_img{
     width: 19px;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -250,11 +261,23 @@ nav ul li a{
 
 
     .down_arrow_icon{  /* Temporarly removed it */
+        margin-left: 5px;
+        padding-left: 0px;
         display: none;
     }
     .up_arrow_icon{
         margin-left: 5px;
+        display: none;
     }
+    .down_arrow_icon.active{
+        display: inline-block
+    }
+    .up_arrow_icon.active{
+        display: inline-block
+    }
+
+
+
 
     .dropdown1{ /*first dropdown to remove padding*/
         padding-top: 0px;
@@ -286,7 +309,6 @@ nav ul li a{
        border-radius: 13px;
        padding: 10px 16px;
        box-shadow: 1px 3px 17px 2px rgba(0,0,0,0.2);
-       display: none; /*hidden the two dropdown menus*/
     }
     .dropdown_content li, 
     .dropdown_content_2 li{
@@ -295,10 +317,19 @@ nav ul li a{
     }
     .dropdown_content{
         left: -68px;
+        display: none; /*hidden the dropdown menus*/
     }
     .dropdown_content_2{
         left: 132px;
+        display: none;/*hidden the dropdown menus*/
     }
+    .dropdown_content.active{
+        display: flex;
+    }
+    .dropdown_content_2.active{
+        display: flex;
+    }
+   
 
     /************ HERO CONTAINER ************/
     .hero_container{
@@ -355,7 +386,6 @@ nav ul li a{
         width: 430px;
         font-size: 1.2rem;
         font-weight: normal;
-       
     }
 
     button {
