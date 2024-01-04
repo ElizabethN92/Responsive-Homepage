@@ -77,6 +77,11 @@ button {
     margin-top: 20px;
     margin-bottom: 40px;
 }
+button:hover{
+    color: hsl(0, 0%, 8%);
+    border: 1.5px solid hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+}
 
 
 
@@ -134,14 +139,25 @@ nav ul li{  /*Main nav list*/
     font-size: 16px;
 }
 
+
 nav ul li a{
     text-decoration: none;
     color: hsl(0, 0%, 41%);
     font-weight: 500;
 }
+nav ul li a:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+
 .down_arrow_icon{
     padding-left: 10px;
 }
+.down_arrow_icon:hover, .up_arrow_icon:hover{
+    filter:brightness(0.3)
+}
+
+
 
 
 
@@ -158,12 +174,20 @@ nav ul li a{
     font-weight: 500;
     font-size: 15px;
 }
+.login_link:hover{
+    color: hsl(0, 0%, 8%);
+}
+
 .register_btn{
     background-color: white;
     color:  hsl(0, 0%, 41%);
     border: 1.5px solid  hsl(0, 0%, 41%);;
     padding: 14px 30%; /*make padding responsive to screen width*/
     font-size: 15px;
+}
+.register_btn:hover{
+    color: hsl(0, 0%, 8%);
+    border: 1.5px solid hsl(0, 0%, 8%);
 }
 
 /******** DROP-DOWN MENU **********/
@@ -279,7 +303,7 @@ nav ul li a{
 
 
 
-    .dropdown1{ /*first dropdown to remove padding*/
+    .dropdown1{ /*first dropdown menu should not have padding*/
         padding-top: 0px;
     }
     .login_or_register_container{
@@ -393,6 +417,10 @@ nav ul li a{
         color: hsl(0, 0%, 8%);
         background-color: hsl(0, 0%, 98%);
         border: 1px solid hsl(0, 0%, 8%);
+    }
+    button:hover{
+        border: 1.5px solid hsl(0, 0%, 8%);
+        font-weight: 700;
     }
 
     .partnership_icons_container{

@@ -7,7 +7,7 @@ const upArrowIcon = document.querySelectorAll(".up_arrow_icon")
 
 
 
-
+//Navigation Desktop Version
 menuWithInnerLinks.forEach((item, i)=>{
       //dropdownContent.forEach(e=> e.classList.remove('active'))
     item.addEventListener('click', function(){
@@ -39,5 +39,10 @@ menuWithInnerLinks.forEach((item, i)=>{
        
     })
 })
+
+
+
+//Navigation Mobile Version
+
 
 
