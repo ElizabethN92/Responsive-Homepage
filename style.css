@@ -89,8 +89,8 @@ button:hover{
 .partnership_icons_container{
     display: flex;
     justify-content: space-around;
-    padding: 10px 0px;
-    margin-bottom: 100px;
+    padding: 10px 0px 60px;
+    
 }
 .partnership_icons_container img{
     font-size: 20px;
@@ -110,6 +110,13 @@ button:hover{
     background-color: rgba(20, 20, 20, 0.7);
     display: none;
 }
+.background_color_overlay.active{
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+   position: fixed;
+    
+}
 
 
 /******** SLIDE-OUT MENU *************/
@@ -117,11 +124,17 @@ nav {
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     width: 66%;
-    height: 100vh;
+    height: 100%;
     background-color: white;
     display: none;  /*** hide nav ****/
+   
+}
+nav.active{
+    display: inline;
+    overflow: scroll;
+    position: fixed;
 }
 .close_menu_icon{
     float: right;
@@ -154,7 +167,7 @@ nav ul li a:hover{
     padding-left: 10px;
 }
 .down_arrow_icon:hover, .up_arrow_icon:hover{
-    filter:brightness(0.3)
+    filter:brightness(0.3) /*Used this property to make the color darker*/
 }
 
 
@@ -463,6 +476,7 @@ nav ul li a:hover{
 @media screen and (max-width: 1110px){
     .partnership_icons_container{
         bottom: 74px;
+
     }
 }
 

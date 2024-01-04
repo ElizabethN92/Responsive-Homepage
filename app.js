@@ -1,5 +1,5 @@
-let menuWithInnerLinks = document.querySelectorAll(".hidden_dropdown_menu")
-let dropdownContent = document.querySelectorAll(".dropdown")
+const menuWithInnerLinks = document.querySelectorAll(".hidden_dropdown_menu")
+const dropdownContent = document.querySelectorAll(".dropdown")
 const downArrowIcon = document.querySelectorAll(".down_arrow_icon")
 const upArrowIcon = document.querySelectorAll(".up_arrow_icon")
 
@@ -43,6 +43,20 @@ menuWithInnerLinks.forEach((item, i)=>{
 
 
 //Navigation Mobile Version
+const hiddenMenu = document.querySelector('nav')
+const overlay = document.querySelector('.background_color_overlay')
+const hamburgerMenu = document.querySelector(".menu_icon");
+const exitMenuIcon = document.querySelector('.close_menu_icon')
 
+function openHiddenMenu(){
+   hiddenMenu.classList.add('active')
+   overlay.classList.add('active')
+}
+function closeHiddenMenu(){
+   hiddenMenu.classList.remove('active')
+   overlay.classList.remove('active')
+}
 
+hamburgerMenu.addEventListener('click', openHiddenMenu)
+exitMenuIcon.addEventListener('click', closeHiddenMenu)
 
