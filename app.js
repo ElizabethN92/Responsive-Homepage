@@ -53,6 +53,7 @@ menuWithInnerLinks.forEach((item, i)=>{
 ////////////// Navigation Mobile Version /////////////////////////////
 const hiddenMenu = document.querySelector('nav')
 const overlay = document.querySelector('.background_color_overlay')
+const heroContainer = document.querySelector('.hero_content_container')
 const hamburgerMenu = document.querySelector(".menu_icon");
 const exitMenuIcon = document.querySelector('.close_menu_icon')
 
@@ -67,7 +68,13 @@ function closeHiddenMenu(){
 
 hamburgerMenu.addEventListener('click', openHiddenMenu)
 exitMenuIcon.addEventListener('click', closeHiddenMenu)
+overlay.addEventListener('click', closeHiddenMenu )
 
+/*Close dropdown content by clicking the background container */
+heroContainer.addEventListener('click', function(){
+   closeFirstDropdownContent()
+   closeSecondDropdownContent()
+})
 
 
 window.addEventListener('resize', function() {

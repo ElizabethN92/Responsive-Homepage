@@ -46,7 +46,7 @@ header.main_header_container{
     font-size: 36px;
     text-align: center;
 
-    margin-top: 40px;
+    margin-top: 45px;
     margin-bottom: 20px;
 }
 
@@ -76,8 +76,8 @@ button {
     display: block;
 
     /*create space between button and paragraph*/
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 button:hover{
     color: hsl(0, 0%, 8%);
@@ -91,7 +91,7 @@ button:hover{
 .partnership_icons_container{
     display: flex;
     justify-content: space-around;
-    padding: 10px 0px 60px;
+    padding-bottom: 60px;
     
 }
 .partnership_icons_container img{
