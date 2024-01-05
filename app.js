@@ -71,7 +71,7 @@ exitMenuIcon.addEventListener('click', closeHiddenMenu)
 
 
 window.addEventListener('resize', function() {
-   if (window.innerWidth < 1100){
+   if (window.innerWidth > 1100){
    /*If any of the dropdown content was left active, it will be remove if the screen size changes to the desktop version*/
         closeFirstDropdownContent()
         closeSecondDropdownContent()
