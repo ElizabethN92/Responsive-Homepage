@@ -7,17 +7,27 @@ const upArrowIcon = document.querySelectorAll(".up_arrow_icon")
 
 
 
-//Navigation Desktop Version
+/////////////////// Navigation Desktop Version ////////////////////
+function closeFirstDropdownContent(){
+   dropdownContent[0].classList.remove('active')
+   upArrowIcon[0].classList.remove('active')
+   downArrowIcon[0].classList.add('active')
+}
+
+function closeSecondDropdownContent(){
+   dropdownContent[1].classList.remove('active')
+   upArrowIcon[1].classList.remove('active')
+   downArrowIcon[1].classList.add('active')
+}
+
 menuWithInnerLinks.forEach((item, i)=>{
       //dropdownContent.forEach(e=> e.classList.remove('active'))
     item.addEventListener('click', function(){
 
        if (i == 1){
-        dropdownContent[0].classList.remove('active')
-        upArrowIcon[0].classList.remove('active')
-        downArrowIcon[0].classList.add('active')
+        closeFirstDropdownContent()
 
-        //Dropdown Container
+       //Dropdown Container
        dropdownContent[i].classList.toggle('active')  
 
        //Arrows
@@ -25,11 +35,9 @@ menuWithInnerLinks.forEach((item, i)=>{
        upArrowIcon[i].classList.toggle('active')
 
        } else{
-        dropdownContent[1].classList.remove('active')
-        upArrowIcon[1].classList.remove('active')
-        downArrowIcon[1].classList.add('active')
+       closeSecondDropdownContent()
 
-        //Dropdown Container
+       //Dropdown Container
        dropdownContent[i].classList.toggle('active')  
 
        //Arrows
@@ -42,7 +50,7 @@ menuWithInnerLinks.forEach((item, i)=>{
 
 
 
-//Navigation Mobile Version
+////////////// Navigation Mobile Version /////////////////////////////
 const hiddenMenu = document.querySelector('nav')
 const overlay = document.querySelector('.background_color_overlay')
 const hamburgerMenu = document.querySelector(".menu_icon");
@@ -59,4 +67,19 @@ function closeHiddenMenu(){
 
 hamburgerMenu.addEventListener('click', openHiddenMenu)
 exitMenuIcon.addEventListener('click', closeHiddenMenu)
+
+
+
+window.addEventListener('resize', function() {
+   if (window.innerWidth < 1100){
+   /*If any of the dropdown content was left active, it will be remove if the screen size changes to the desktop version*/
+        closeFirstDropdownContent()
+        closeSecondDropdownContent()
+
+   /*If the hidden nav is left open, it will automatically close if the screen size changes to the desktop version*/
+      closeHiddenMenu()
+   
+   }
+});
+
 

@@ -19,7 +19,8 @@ header.main_header_container{
     float: left;
 }
 .menu_icon{
-    float:right
+    float:right;
+    cursor: pointer;
 }
 
 
@@ -68,6 +69,7 @@ button {
     font-family: 'Epilogue', sans-serif;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
 
     /**center button horizontally*/
     margin: 0 auto;
@@ -140,6 +142,7 @@ nav.active{
     float: right;
     margin-top: 25px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 nav ul {
@@ -163,6 +166,7 @@ nav ul li a:hover{
 }
 
 
+/************* ARROW ICONS ***********/
 .down_arrow_icon{
     padding-left: 10px;
 }
@@ -171,9 +175,26 @@ nav ul li a:hover{
 }
 
 
+/* The arrow is temporarly hidden and then displayed again when the active class gets added */
+.down_arrow_icon{  
+    margin-left: 5px;
+    padding-left: 0px;
+    display: none;
+}
+.up_arrow_icon{
+    margin-left: 5px;
+    display: none;
+}
+.down_arrow_icon.active{
+    display: inline-block
+}
+.up_arrow_icon.active{
+    display: inline-block
+}
 
 
 
+/************ LOGIN AND REGISTER BUTTON ************/
 .login_or_register_container{
    /* border: 1px solid red;*/
     margin-top: 42px; 
@@ -209,6 +230,12 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+    display: none;
+}
+
+.dropdown_content.active, 
+.dropdown_content_2.active {
+    display: flex;
 }
 
 .dropdown1{ /*first dropdown to remove padding*/
@@ -297,21 +324,7 @@ nav ul li a:hover{
 
 
 
-    .down_arrow_icon{  /* Temporarly removed it */
-        margin-left: 5px;
-        padding-left: 0px;
-        display: none;
-    }
-    .up_arrow_icon{
-        margin-left: 5px;
-        display: none;
-    }
-    .down_arrow_icon.active{
-        display: inline-block
-    }
-    .up_arrow_icon.active{
-        display: inline-block
-    }
+    
 
 
 
