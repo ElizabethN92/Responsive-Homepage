@@ -29,7 +29,7 @@ header.main_header_container{
     /*border: 1px solid orange; */
     width: auto;
 }
-.hero_img{
+.hero_img_mobile{
     width: 100%;
 }
 .hero_img_desktop {
@@ -324,10 +324,6 @@ nav ul li a:hover{
 
 
 
-    
-
-
-
 
     .dropdown1{ /*first dropdown menu should not have padding*/
         padding-top: 0px;
@@ -405,7 +401,7 @@ nav ul li a:hover{
     }
 
     /******* HERO IMAGE ********/
-    .hero_img{
+    .hero_img_mobile{
         display: none;
     }
     .hero_img_desktop {
