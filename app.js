@@ -3,8 +3,6 @@ const dropdownContent = document.querySelectorAll(".dropdown")
 const downArrowIcon = document.querySelectorAll(".down_arrow_icon")
 const upArrowIcon = document.querySelectorAll(".up_arrow_icon")
 
-//let dropdownMenu = Array.from(dropdownContent) //turn it into an array
-
 
 
 /////////////////// Navigation Desktop Version ////////////////////
