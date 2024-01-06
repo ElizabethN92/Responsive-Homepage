@@ -416,8 +416,8 @@ class gets added using javaScript */
 
     button {
         margin: 45px 0px 0px;
-        color: hsl(0, 0%, 8%);
-        background-color: hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 98%);
+        background-color: hsl(0, 0%, 8%);
         border: 1px solid hsl(0, 0%, 8%);
     }
     button:hover{
