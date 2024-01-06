@@ -7,13 +7,14 @@
 
 body{
     margin: 0;
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Epilogue', sans-serif;   
     background-color: hsl(0, 0%, 98%);
 }
+
+/************* HEADER (mobile version) ***************/
 header.main_header_container{
-    /*border: 1px solid red; */
     padding: 26px 20px;
-    overflow: hidden;
+    overflow: hidden; /*Avoid bottom padding from being removed*/
 }
 .brand_logo{
     float: left;
@@ -25,10 +26,6 @@ header.main_header_container{
 
 
 /********* HERO IMAGE ***********/
-.hero_img_container{
-    /*border: 1px solid orange; */
-    width: auto;
-}
 .hero_img_mobile{
     width: 100%;
 }
@@ -38,7 +35,6 @@ header.main_header_container{
 
 /********** HERO CONTENT ***********/
 .hero_content_container{
-    /* border: 1px solid red;*/
     font-family: 'Epilogue', sans-serif;
 }
 .hero_title{
@@ -116,7 +112,7 @@ button:hover{
     display: inline-block;
     overflow: hidden;
     z-index: 1;
-   position: fixed;
+    position: fixed;
     
 }
 
@@ -131,20 +127,12 @@ nav {
     height: 100%;
     background-color: white;
     display: none;  /*** hide nav ****/
-   
 }
-nav.active{
+nav.active{  /*Nav will be shown using javaScript*/
     display: inline;
     overflow: scroll;
     position: fixed;
 }
-.close_menu_icon{
-    float: right;
-    margin-top: 25px;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
 nav ul {
     list-style-type: none;
     padding-left: 0px;
@@ -154,8 +142,6 @@ nav ul li{  /*Main nav list*/
     padding: 23px 30px 0px 30px;
     font-size: 16px;
 }
-
-
 nav ul li a{
     text-decoration: none;
     color: hsl(0, 0%, 41%);
@@ -165,17 +151,25 @@ nav ul li a:hover{
     color: hsl(0, 0%, 8%);
 }
 
+.close_menu_icon{
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
 
 /************* ARROW ICONS ***********/
 .down_arrow_icon{
     padding-left: 10px;
 }
 .down_arrow_icon:hover, .up_arrow_icon:hover{
-    filter:brightness(0.3) /*Used this property to make the color darker*/
+    filter:brightness(0.3) /*Used this property to make the icon darker*/
 }
 
 
-/* The arrow is temporarly hidden and then displayed again when the active class gets added */
+/* The arrow is temporarly hidden and then displayed again when the active 
+class gets added using javaScript */
 .down_arrow_icon{  
     margin-left: 5px;
     padding-left: 0px;
@@ -196,11 +190,9 @@ nav ul li a:hover{
 
 /************ LOGIN AND REGISTER BUTTON ************/
 .login_or_register_container{
-   /* border: 1px solid red;*/
     margin-top: 42px; 
 }
 .login_link{
-    /*border: 1px solid green; */
     display: block;
     text-align: center;
     text-decoration: none;
@@ -224,9 +216,10 @@ nav ul li a:hover{
     border: 1.5px solid hsl(0, 0%, 8%);
 }
 
+
 /******** DROP-DOWN MENU **********/
 .dropdown_content, 
-.dropdown_content_2 { /*All dropdown content*/
+.dropdown_content_2 { /*These classes represent the dropdown content*/
     display: flex;
     flex-direction: column;
     margin-top: 15px;
@@ -235,26 +228,23 @@ nav ul li a:hover{
 
 .dropdown_content.active, 
 .dropdown_content_2.active {
-    display: flex;
+    display: flex; /*Dropdown content is displayed using javaScript*/
 }
 
-.dropdown1{ /*first dropdown to remove padding*/
+.dropdown1{ /*Remove padding from dropdown content*/
     padding-top: 0px;
 }
-
 .dropdown_content li, 
-.dropdown_content_2 li{ /*align items vertically*/
+.dropdown_content_2 li{ /*Align items vertically*/
     display: flex;
     padding: 10px 30px;
 }
-
 .dropdown_item{
     padding-top: 5px;
     padding-left: 15px;
     align-items: center;
     font-size: 16px;
 }
-
 .dropdown_img{
     width: 19px;
 }
@@ -264,16 +254,9 @@ nav ul li a:hover{
 
 
 
-
-
-
-
-
-
 /*********************** DESKTOP VERSION **********************/
 
 @media screen and (min-width: 1100px){
-
 
     header.main_header_container{
         display: flex;
@@ -292,6 +275,9 @@ nav ul li a:hover{
     .brand_logo{
         margin-top: 4px;
     }
+    .close_menu_icon{ /*Removed exit icon from desktop version of website*/
+        display: none;
+    }
 
     nav {
         display: flex;
@@ -303,9 +289,6 @@ nav ul li a:hover{
         width: 90%;
         height: 27px;
         background-color:  hsl(0, 0%, 98%);
-    }
-    .close_menu_icon{
-        display: none;
     }
     nav ul {
         list-style-type: none;
@@ -321,13 +304,11 @@ nav ul li a:hover{
     nav ul li.main_menu:first-child{
         padding-left:17px;
     }
-
-
-
-
     .dropdown1{ /*first dropdown menu should not have padding*/
         padding-top: 0px;
     }
+
+    /***** RIGHT SIDE MENU ITEMS *********/
     .login_or_register_container{
         display: flex;
         margin: 0;
@@ -346,9 +327,8 @@ nav ul li a:hover{
 
 
 
-     /***** Dropdown menu item **********/
+     /***** DROPDOWN MENU ITEMS **********/
     .dropdown_content, .dropdown_content_2 {
-       /*border: 1px solid orange; */
        position: absolute;
        z-index: 2;
        background-color: hsl(0, 0%, 98%);
@@ -454,34 +434,31 @@ nav ul li a:hover{
         justify-content: space-between;
     }
 
-    /*Chaning the img to contain, the margin of the the div and width percentage might help*/
+   
 
 }
 
+/***********ALIGN BOTTOM CLIENT ICONS TO HERO IMAGE**************/
 @media screen and (max-width: 1431px){
     .partnership_icons_container{
         bottom: -8px;
     }
 }
-
 @media screen and (max-width: 1349px){
     .partnership_icons_container{
         bottom: 10px;
     }
 }
-
 @media screen and (max-width: 1296px){
     .partnership_icons_container{
         bottom: 30px;
     }
 }
-
 @media screen and (max-width: 1278px){
     .partnership_icons_container{
         bottom: 50px;
     }
 }
-
 @media screen and (max-width: 1110px){
     .partnership_icons_container{
         bottom: 74px;
@@ -490,20 +467,18 @@ nav ul li a:hover{
 }
 
 
-
+/************ CHANGE HERO CONTAINER PROPERTIES ****************/
 @media screen and (min-width: 1296px){
     .hero_container{
         width: 88%;
     }
 }
-
 @media screen and (min-width: 1440px){
     .hero_container{
         width: 83%;
     }
     .hero_content_container{
         margin-left: 38px;
-        
     }
 }
 
